@@ -50,7 +50,7 @@ class FontTableViewController: UITableViewController {
 		let face_name = fontManager.getFaces(all_faces[indexPath.section])[indexPath.row]
 		
 		cell.headlineLabel!.text = face_name
-		cell.headlineLabel.font = UIFont(name: face_name, size: 42.0)
+		cell.headlineLabel.font = UIFont(name: face_name, size: 52.0)
 		
 		return cell
     }
