@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F656C4E1CB72F2F00CB2C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCAFDB81CB6A85E00ED7CBD /* Main.storyboard */; };
+		0F656C501CB72FBD00CB2C63 /* FontTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F656C4F1CB72FBD00CB2C63 /* FontTableViewController.swift */; };
+		0F656C511CB72FBD00CB2C63 /* FontTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F656C4F1CB72FBD00CB2C63 /* FontTableViewController.swift */; };
 		0FCAFDB21CB6A85E00ED7CBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCAFDB11CB6A85E00ED7CBD /* AppDelegate.swift */; };
 		0FCAFDB41CB6A85E00ED7CBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCAFDB31CB6A85E00ED7CBD /* ViewController.swift */; };
 		0FCAFDB71CB6A85E00ED7CBD /* Apple_Fonts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FCAFDB51CB6A85E00ED7CBD /* Apple_Fonts.xcdatamodeld */; };
@@ -14,6 +17,8 @@
 		0FCAFDBC1CB6A85E00ED7CBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FCAFDBB1CB6A85E00ED7CBD /* Assets.xcassets */; };
 		0FCAFDC71CB6A85E00ED7CBD /* Apple_FontsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCAFDC61CB6A85E00ED7CBD /* Apple_FontsTests.swift */; };
 		0FCAFDD21CB6A85E00ED7CBD /* Apple_FontsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCAFDD11CB6A85E00ED7CBD /* Apple_FontsUITests.swift */; };
+		0FCF618C1CB6B6FA00845BC5 /* CZFontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCF618B1CB6B6FA00845BC5 /* CZFontsManager.swift */; };
+		0FCF618D1CB6B6FA00845BC5 /* CZFontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCF618B1CB6B6FA00845BC5 /* CZFontsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F656C4F1CB72FBD00CB2C63 /* FontTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontTableViewController.swift; sourceTree = "<group>"; };
 		0FCAFDAE1CB6A85E00ED7CBD /* Apple Fonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Fonts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCAFDB11CB6A85E00ED7CBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FCAFDB31CB6A85E00ED7CBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		0FCAFDCD1CB6A85E00ED7CBD /* Apple FontsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple FontsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCAFDD11CB6A85E00ED7CBD /* Apple_FontsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_FontsUITests.swift; sourceTree = "<group>"; };
 		0FCAFDD31CB6A85E00ED7CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FCF618A1CB6A8E400845BC5 /* AppleFonts.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AppleFonts.playground; sourceTree = "<group>"; };
+		0FCF618B1CB6B6FA00845BC5 /* CZFontsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZFontsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		0FCAFDA51CB6A85E00ED7CBD = {
 			isa = PBXGroup;
 			children = (
+				0FCAFDDF1CB6A88500ED7CBD /* Playgrounds */,
 				0FCAFDB01CB6A85E00ED7CBD /* Apple Fonts */,
 				0FCAFDC51CB6A85E00ED7CBD /* Apple FontsTests */,
 				0FCAFDD01CB6A85E00ED7CBD /* Apple FontsUITests */,
@@ -98,7 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				0FCAFDB11CB6A85E00ED7CBD /* AppDelegate.swift */,
+				0FCF618B1CB6B6FA00845BC5 /* CZFontsManager.swift */,
 				0FCAFDB31CB6A85E00ED7CBD /* ViewController.swift */,
+				0F656C4F1CB72FBD00CB2C63 /* FontTableViewController.swift */,
 				0FCAFDB81CB6A85E00ED7CBD /* Main.storyboard */,
 				0FCAFDBB1CB6A85E00ED7CBD /* Assets.xcassets */,
 				0FCAFDBD1CB6A85E00ED7CBD /* Info.plist */,
@@ -123,6 +134,15 @@
 				0FCAFDD31CB6A85E00ED7CBD /* Info.plist */,
 			);
 			path = "Apple FontsUITests";
+			sourceTree = "<group>";
+		};
+		0FCAFDDF1CB6A88500ED7CBD /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				0FCF618A1CB6A8E400845BC5 /* AppleFonts.playground */,
+			);
+			name = Playgrounds;
+			path = "Apple Fonts";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +213,7 @@
 				TargetAttributes = {
 					0FCAFDAD1CB6A85E00ED7CBD = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = UB37VMGP6E;
 					};
 					0FCAFDC11CB6A85E00ED7CBD = {
 						CreatedOnToolsVersion = 7.3;
@@ -245,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F656C4E1CB72F2F00CB2C63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FCAFDB41CB6A85E00ED7CBD /* ViewController.swift in Sources */,
+				0FCF618C1CB6B6FA00845BC5 /* CZFontsManager.swift in Sources */,
 				0FCAFDB71CB6A85E00ED7CBD /* Apple_Fonts.xcdatamodeld in Sources */,
+				0F656C501CB72FBD00CB2C63 /* FontTableViewController.swift in Sources */,
 				0FCAFDB21CB6A85E00ED7CBD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FCAFDC71CB6A85E00ED7CBD /* Apple_FontsTests.swift in Sources */,
+				0FCF618D1CB6B6FA00845BC5 /* CZFontsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F656C511CB72FBD00CB2C63 /* FontTableViewController.swift in Sources */,
 				0FCAFDD21CB6A85E00ED7CBD /* Apple_FontsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Apple Fonts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mapoftheunexplored.Apple-Fonts";
@@ -404,6 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Apple Fonts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mapoftheunexplored.Apple-Fonts";
@@ -476,6 +504,7 @@
 				0FCAFDD81CB6A85E00ED7CBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FCAFDD91CB6A85E00ED7CBD /* Build configuration list for PBXNativeTarget "Apple FontsTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +513,7 @@
 				0FCAFDDB1CB6A85E00ED7CBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FCAFDDC1CB6A85E00ED7CBD /* Build configuration list for PBXNativeTarget "Apple FontsUITests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +522,7 @@
 				0FCAFDDE1CB6A85E00ED7CBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
