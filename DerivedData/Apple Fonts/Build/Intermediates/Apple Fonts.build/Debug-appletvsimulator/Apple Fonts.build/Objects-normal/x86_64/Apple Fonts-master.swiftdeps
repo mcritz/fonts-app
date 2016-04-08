@@ -1,8 +1,8 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "95f01e57686a049b9d6c210f4dd02676"
-build_time: [513402267, 932236000]
+build_time: [513403277, 88013000]
 inputs:
   "/Users/mcritz/Development/Apple Fonts/Apple Fonts/ViewController.swift": [513355102, 0]
   "/Users/mcritz/Development/Apple Fonts/Apple Fonts/CZFontsManager.swift": [513390789, 0]
-  "/Users/mcritz/Development/Apple Fonts/Apple Fonts/FontTableViewController.swift": [513402266, 0]
+  "/Users/mcritz/Development/Apple Fonts/Apple Fonts/FontTableViewController.swift": [513403273, 0]
   "/Users/mcritz/Development/Apple Fonts/Apple Fonts/AppDelegate.swift": [513358874, 0]

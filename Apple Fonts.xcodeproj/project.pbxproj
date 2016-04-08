@@ -53,7 +53,6 @@
 		0FCAFDCD1CB6A85E00ED7CBD /* Apple FontsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple FontsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCAFDD11CB6A85E00ED7CBD /* Apple_FontsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_FontsUITests.swift; sourceTree = "<group>"; };
 		0FCAFDD31CB6A85E00ED7CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0FCF618A1CB6A8E400845BC5 /* AppleFonts.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AppleFonts.playground; sourceTree = "<group>"; };
 		0FCF618B1CB6B6FA00845BC5 /* CZFontsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZFontsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +84,6 @@
 		0FCAFDA51CB6A85E00ED7CBD = {
 			isa = PBXGroup;
 			children = (
-				0FCAFDDF1CB6A88500ED7CBD /* Playgrounds */,
 				0FCAFDB01CB6A85E00ED7CBD /* Apple Fonts */,
 				0FCAFDC51CB6A85E00ED7CBD /* Apple FontsTests */,
 				0FCAFDD01CB6A85E00ED7CBD /* Apple FontsUITests */,
@@ -134,15 +132,6 @@
 				0FCAFDD31CB6A85E00ED7CBD /* Info.plist */,
 			);
 			path = "Apple FontsUITests";
-			sourceTree = "<group>";
-		};
-		0FCAFDDF1CB6A88500ED7CBD /* Playgrounds */ = {
-			isa = PBXGroup;
-			children = (
-				0FCF618A1CB6A8E400845BC5 /* AppleFonts.playground */,
-			);
-			name = Playgrounds;
-			path = "Apple Fonts";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

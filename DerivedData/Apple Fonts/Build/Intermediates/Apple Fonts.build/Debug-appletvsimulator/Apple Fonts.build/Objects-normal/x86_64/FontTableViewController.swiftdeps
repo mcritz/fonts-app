@@ -9,31 +9,34 @@ provides-member:
 - ["C11Apple_Fonts13FontTableCell", ""]
 - ["C11Apple_Fonts23FontTableViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "numberOfSectionsInTableView"
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
-- "all_faces"
 - "headlineLabel"
+- "numberOfSectionsInTableView"
+- "all_faces"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "tableView"
+- "tableView"
+- "tableView"
 depends-top-level:
-- "Int"
-- "FontTableViewController"
-- "UITableView"
 - !private "StringLiteralType"
-- "UITableViewController"
 - "CZFont"
-- "FontTableCell"
+- "UILabel"
+- "NSIndexPath"
 - "String"
 - "UITableViewCell"
-- "NSIndexPath"
-- "UILabel"
+- "Int"
+- !private "UIFont"
+- "UITableViewController"
+- "FontTableCell"
+- "UITableView"
+- "FontTableViewController"
 depends-member:
 - ["Ps9AnyObject", "CZFont"]
+- !private ["Ps9AnyObject", "UIFont"]
 - ["Ps9AnyObject", "all_faces"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "font"]
 - ["Ps9AnyObject", "fontManager"]
 - !private ["Ps9AnyObject", "getFaces"]
 - ["Ps9AnyObject", "headlineLabel"]
@@ -62,12 +65,15 @@ depends-member:
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["Ps21BitwiseOperationsType", "Distance"]
 - !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
 - ["Ps11CVarArgType", "CZFont"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "UIFont"]
 - ["Ps11CVarArgType", "all_faces"]
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["Ps11CVarArgType", "font"]
 - ["Ps11CVarArgType", "fontManager"]
 - ["Ps11CVarArgType", "headlineLabel"]
 - ["Ps11CVarArgType", "init"]
@@ -93,10 +99,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - ["Ps28CustomDebugStringConvertible", "all_faces"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithIdentifier"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "font"]
 - ["Ps28CustomDebugStringConvertible", "fontManager"]
 - ["Ps28CustomDebugStringConvertible", "headlineLabel"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -114,10 +122,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIFont"]
 - ["Ps23CustomStringConvertible", "all_faces"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "font"]
 - ["Ps23CustomStringConvertible", "fontManager"]
 - ["Ps23CustomStringConvertible", "headlineLabel"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -132,9 +142,11 @@ depends-member:
 - ["Ps9Equatable", "CZFont"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "UIFont"]
 - ["Ps9Equatable", "all_faces"]
 - !private ["Ps9Equatable", "dequeueReusableCellWithIdentifier"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "font"]
 - ["Ps9Equatable", "fontManager"]
 - ["Ps9Equatable", "headlineLabel"]
 - ["Ps9Equatable", "init"]
@@ -154,6 +166,7 @@ depends-member:
 - ["C11Apple_Fonts23FontTableViewController", "Int"]
 - ["C11Apple_Fonts23FontTableViewController", "NSIndexPath"]
 - ["C11Apple_Fonts23FontTableViewController", "String"]
+- !private ["C11Apple_Fonts23FontTableViewController", "UIFont"]
 - ["C11Apple_Fonts23FontTableViewController", "UITableView"]
 - ["C11Apple_Fonts23FontTableViewController", "UITableViewCell"]
 - ["C11Apple_Fonts23FontTableViewController", "all_faces"]
@@ -170,9 +183,11 @@ depends-member:
 - ["Ps8Hashable", "CZFont"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "UIFont"]
 - ["Ps8Hashable", "all_faces"]
 - !private ["Ps8Hashable", "dequeueReusableCellWithIdentifier"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "font"]
 - ["Ps8Hashable", "fontManager"]
 - ["Ps8Hashable", "headlineLabel"]
 - ["Ps8Hashable", "init"]
@@ -216,9 +231,11 @@ depends-member:
 - !private ["Ps16MutableSliceable", "count"]
 - !private ["Ps16MutableSliceable", "subscript"]
 - ["PSo8NSCoding", "CZFont"]
+- !private ["PSo8NSCoding", "UIFont"]
 - ["PSo8NSCoding", "all_faces"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "font"]
 - ["PSo8NSCoding", "fontManager"]
 - ["PSo8NSCoding", "headlineLabel"]
 - ["PSo8NSCoding", "init"]
@@ -229,9 +246,11 @@ depends-member:
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "section"]
 - ["PSo26NSExtensionRequestHandling", "CZFont"]
+- !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - ["PSo26NSExtensionRequestHandling", "all_faces"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "fontManager"]
@@ -247,12 +266,14 @@ depends-member:
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "NSIndexPath"]
 - ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIFont"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - ["CSo8NSObject", "all_faces"]
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "font"]
 - ["CSo8NSObject", "fontManager"]
 - ["CSo8NSObject", "headlineLabel"]
 - ["CSo8NSObject", "init"]
@@ -263,9 +284,11 @@ depends-member:
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "CZFont"]
+- !private ["PSo16NSObjectProtocol", "UIFont"]
 - ["PSo16NSObjectProtocol", "all_faces"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "font"]
 - ["PSo16NSObjectProtocol", "fontManager"]
 - ["PSo16NSObjectProtocol", "headlineLabel"]
 - ["PSo16NSObjectProtocol", "init"]
@@ -303,19 +326,23 @@ depends-member:
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo29UIAccessibilityIdentification", "font"]
 - ["PSo29UIAccessibilityIdentification", "headlineLabel"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo12UIAppearance", "font"]
 - ["PSo12UIAppearance", "headlineLabel"]
 - ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "text"]
 - ["PSo12UIAppearance", ""]
 - ["PSo21UIAppearanceContainer", "CZFont"]
+- !private ["PSo21UIAppearanceContainer", "UIFont"]
 - ["PSo21UIAppearanceContainer", "all_faces"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "font"]
 - ["PSo21UIAppearanceContainer", "fontManager"]
 - ["PSo21UIAppearanceContainer", "headlineLabel"]
 - ["PSo21UIAppearanceContainer", "init"]
@@ -325,6 +352,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["PSo18UIContentContainer", "CZFont"]
+- !private ["PSo18UIContentContainer", "UIFont"]
 - ["PSo18UIContentContainer", "all_faces"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "fontManager"]
@@ -334,19 +362,23 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo17UICoordinateSpace", "font"]
 - ["PSo17UICoordinateSpace", "headlineLabel"]
 - ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo13UIDynamicItem", "font"]
 - ["PSo13UIDynamicItem", "headlineLabel"]
 - ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "text"]
 - ["PSo13UIDynamicItem", ""]
 - ["PSo18UIFocusEnvironment", "CZFont"]
+- !private ["PSo18UIFocusEnvironment", "UIFont"]
 - ["PSo18UIFocusEnvironment", "all_faces"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "font"]
 - ["PSo18UIFocusEnvironment", "fontManager"]
 - ["PSo18UIFocusEnvironment", "headlineLabel"]
 - ["PSo18UIFocusEnvironment", "init"]
@@ -355,21 +387,25 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo6UIFont", "init"]
 - ["PSo27UIGestureRecognizerDelegate", "headlineLabel"]
 - ["PSo27UIGestureRecognizerDelegate", "init"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "CZFont"]
 - !private ["CSo11UIResponder", "FontTableCell"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIFont"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - ["CSo11UIResponder", "all_faces"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "font"]
 - ["CSo11UIResponder", "fontManager"]
 - ["CSo11UIResponder", "headlineLabel"]
 - ["CSo11UIResponder", "init"]
@@ -379,6 +415,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
 - ["PSo20UIScrollViewDelegate", "CZFont"]
+- !private ["PSo20UIScrollViewDelegate", "UIFont"]
 - ["PSo20UIScrollViewDelegate", "all_faces"]
 - ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
 - ["PSo20UIScrollViewDelegate", "fontManager"]
@@ -388,6 +425,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
 - ["PSo20UIScrollViewDelegate", ""]
 - ["PSo16UIStateRestoring", "CZFont"]
+- !private ["PSo16UIStateRestoring", "UIFont"]
 - ["PSo16UIStateRestoring", "all_faces"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "fontManager"]
@@ -407,6 +445,7 @@ depends-member:
 - ["CSo21UITableViewController", "Int"]
 - ["CSo21UITableViewController", "NSIndexPath"]
 - ["CSo21UITableViewController", "String"]
+- !private ["CSo21UITableViewController", "UIFont"]
 - ["CSo21UITableViewController", "UITableView"]
 - ["CSo21UITableViewController", "UITableViewCell"]
 - ["CSo21UITableViewController", "all_faces"]
@@ -418,6 +457,7 @@ depends-member:
 - ["CSo21UITableViewController", "viewDidLoad"]
 - ["CSo21UITableViewController", ""]
 - ["PSo21UITableViewDataSource", "CZFont"]
+- !private ["PSo21UITableViewDataSource", "UIFont"]
 - ["PSo21UITableViewDataSource", "all_faces"]
 - ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
 - ["PSo21UITableViewDataSource", "fontManager"]
@@ -427,6 +467,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "viewDidLoad"]
 - ["PSo21UITableViewDataSource", ""]
 - ["PSo19UITableViewDelegate", "CZFont"]
+- !private ["PSo19UITableViewDelegate", "UIFont"]
 - ["PSo19UITableViewDelegate", "all_faces"]
 - ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
 - ["PSo19UITableViewDelegate", "fontManager"]
@@ -436,9 +477,11 @@ depends-member:
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
 - ["PSo19UITableViewDelegate", ""]
 - ["PSo18UITraitEnvironment", "CZFont"]
+- !private ["PSo18UITraitEnvironment", "UIFont"]
 - ["PSo18UITraitEnvironment", "all_faces"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "font"]
 - ["PSo18UITraitEnvironment", "fontManager"]
 - ["PSo18UITraitEnvironment", "headlineLabel"]
 - ["PSo18UITraitEnvironment", "init"]
@@ -449,6 +492,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "UILabel"]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo6UIView", "font"]
 - ["CSo6UIView", "headlineLabel"]
 - ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "text"]
@@ -457,6 +501,7 @@ depends-member:
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIFont"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - ["CSo16UIViewController", "all_faces"]
@@ -500,6 +545,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "SubSequence"]
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps12_Reflectable", "font"]
 - ["Ps12_Reflectable", "headlineLabel"]
 - ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "subscript"]
@@ -514,6 +560,7 @@ depends-nominal:
 - !private "Vs10ArraySlice"
 - !private "Ps22BidirectionalIndexType"
 - !private "Ps21BitwiseOperationsType"
+- !private "V12CoreGraphics7CGFloat"
 - "Ps11CVarArgType"
 - "C11Apple_Fonts6CZFont"
 - !private "Ps14CollectionType"
@@ -557,6 +604,7 @@ depends-nominal:
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "CSo6UIFont"
 - "PSo27UIGestureRecognizerDelegate"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"

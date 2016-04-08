@@ -47,9 +47,12 @@ class FontTableViewController: UITableViewController {
 	
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		let cell :FontTableCell = tableView.dequeueReusableCellWithIdentifier("font_cell", forIndexPath: indexPath) as! FontTableCell
+		let face_name = fontManager.getFaces(all_faces[indexPath.section])[indexPath.row]
 		
-		cell.headlineLabel!.text = fontManager.getFaces(all_faces[indexPath.section])[indexPath.row]
-        return cell
+		cell.headlineLabel!.text = face_name
+		cell.headlineLabel.font = UIFont(name: face_name, size: 42.0)
+		
+		return cell
     }
 	
 	override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
