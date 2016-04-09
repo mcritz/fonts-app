@@ -9,27 +9,27 @@ provides-member:
 - ["C11Apple_Fonts13FontTableCell", ""]
 - ["C11Apple_Fonts23FontTableViewController", ""]
 provides-dynamic-lookup:
-- "headlineLabel"
-- "numberOfSectionsInTableView"
-- "all_faces"
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
 - "tableView"
 - "tableView"
 - "tableView"
+- "didReceiveMemoryWarning"
+- "headlineLabel"
+- "all_faces"
+- "numberOfSectionsInTableView"
 depends-top-level:
-- !private "StringLiteralType"
 - "CZFont"
+- "FontTableViewController"
+- !private "UIFont"
+- "UITableView"
+- !private "StringLiteralType"
+- "FontTableCell"
+- "Int"
 - "UILabel"
 - "NSIndexPath"
-- "String"
 - "UITableViewCell"
-- "Int"
-- !private "UIFont"
+- "String"
 - "UITableViewController"
-- "FontTableCell"
-- "UITableView"
-- "FontTableViewController"
 depends-member:
 - ["Ps9AnyObject", "CZFont"]
 - !private ["Ps9AnyObject", "UIFont"]

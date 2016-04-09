@@ -7,17 +7,17 @@ provides-member:
 - ["C11Apple_Fonts6CZFont", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "NSData"
-- !private "+"
-- !private "NSURL"
 - !private "UIFont"
-- "String"
-- !private "NSJSONSerialization"
-- !private "print"
-- !private "StringLiteralType"
 - "CZFont"
+- !private "NSJSONSerialization"
+- !private "NSURL"
 - !private "Dictionary"
+- !private "StringLiteralType"
+- !private "+"
+- "String"
 - !private "NSHomeDirectory"
+- "NSData"
+- !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "NSData"]
 - !private ["Ps9AnyObject", "NSHomeDirectory"]

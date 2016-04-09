@@ -9,9 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>iOSFonts.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0F3FD3DF1CB815F8002AD7A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0F3FD3F71CB815F9002AD7A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0F3FD4021CB815F9002AD7A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0FCAFDAD1CB6A85E00ED7CBD</key>
 		<dict>
 			<key>primary</key>

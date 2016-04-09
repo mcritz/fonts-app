@@ -12,8 +12,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="font_cell" id="ELB-qE-jOo" customClass="FontTableCell" customModule="Apple_Fonts" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="54" width="1880" height="66"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="font_face_cell" id="ELB-qE-jOo" customClass="FontTableCell" customModule="Apple_Fonts" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="54" width="1920" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ELB-qE-jOo" id="10h-fu-F6f">
                                     <rect key="frame" x="0.0" y="0.0" width="1904" height="66"/>
