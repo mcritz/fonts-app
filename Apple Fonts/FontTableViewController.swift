@@ -15,11 +15,10 @@ class FontTableCell: UITableViewCell {
 		return self.contentView.frame.height * 0.5
 	}
 	
-	func configureCell(some_title :String) {
+	func configureCell(some_title :String, font_name :String) {
 		self.headlineLabel.text = some_title
 		
-		headlineLabel.font = UIFont(name: some_title, size: getHeight())
-
+		headlineLabel.font = UIFont(name: font_name, size: getHeight())
 	}
 }
 
@@ -28,11 +27,14 @@ class FontTableViewController: UITableViewController {
 	let fontManager = CZFont()
 	
 	let all_faces = CZFont().all_faces
+	
+	let placeholder_text = CZPlaceholderText().getPlaceholder()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 		self.title = NSLocalizedString("Installed Fonts", comment: "")
-
+		
+		
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -62,7 +64,7 @@ class FontTableViewController: UITableViewController {
 		
 		let face_name = fontManager.getFaces(all_faces[indexPath.section])[indexPath.row]
 		
-		cell.configureCell(face_name)
+		cell.configureCell(placeholder_text, font_name: face_name)
 		return cell
     }
 	
