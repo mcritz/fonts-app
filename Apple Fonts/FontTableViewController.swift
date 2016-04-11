@@ -10,6 +10,17 @@ import UIKit
 
 class FontTableCell: UITableViewCell {
 	@IBOutlet var headlineLabel :UILabel!
+	
+	func getHeight() -> CGFloat {
+		return self.contentView.frame.height * 0.5
+	}
+	
+	func configureCell(some_title :String) {
+		self.headlineLabel.text = some_title
+		
+		headlineLabel.font = UIFont(name: some_title, size: getHeight())
+
+	}
 }
 
 class FontTableViewController: UITableViewController {
@@ -20,6 +31,7 @@ class FontTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+		self.title = NSLocalizedString("Installed Fonts", comment: "")
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -50,9 +62,7 @@ class FontTableViewController: UITableViewController {
 		
 		let face_name = fontManager.getFaces(all_faces[indexPath.section])[indexPath.row]
 		
-		cell.headlineLabel!.text = face_name
-		cell.headlineLabel.font = UIFont(name: face_name, size: 16.0)
-		
+		cell.configureCell(face_name)
 		return cell
     }
 	
