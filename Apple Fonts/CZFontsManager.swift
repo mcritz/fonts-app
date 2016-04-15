@@ -18,9 +18,22 @@ class CZFont {
 		all_faces = all_faces.sort()
 	}
 	
-	func getFonts() -> [[String:[String]]] {
-		let font_data = all_faces.map{ family_name -> [String:[String]] in
-			return [family_name:UIFont.fontNamesForFamilyName(family_name)]
+	func getFonts() -> AnyObject {
+		let font_data = all_faces.map{ family_name -> AnyObject in
+			let these_faces = [UIFont.fontNamesForFamilyName(family_name)]
+			guard these_faces.count > 0 else { return [] }
+			
+			let face_data = these_faces[0].map{ face_name in
+				return [
+					"platforms" : [ "appletv" : ["version" : 9.0] ],
+					"font_face" : face_name
+				]
+			}
+			let some_font_data = [
+				"family_name" : family_name,
+				"faces" : face_data
+			]
+			return some_font_data
 		}
 		return font_data
 	}
@@ -29,7 +42,8 @@ class CZFont {
 		return UIFont.fontNamesForFamilyName(family)
 	}
 	
-	func jsonify(someData: [[String:[String]]]) -> NSData? {
+	func jsonify(someData: AnyObject?) -> NSData? {
+		guard let someData :AnyObject = someData! else { return nil }
 		var jsonData = NSData()
 		do {
 			try jsonData = NSJSONSerialization.dataWithJSONObject(someData, options: .PrettyPrinted)

@@ -93,6 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -122,23 +123,34 @@ SWIFT_CLASS("_TtC11Apple_Fonts11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
+@class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC11Apple_Fonts14FontDetailView")
+@interface FontDetailView : UIViewController
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UILabel;
 
 SWIFT_CLASS("_TtC11Apple_Fonts13FontTableCell")
 @interface FontTableCell : UITableViewCell
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified headlineLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified subheadlineLabel;
+- (CGFloat)getHeight;
+- (void)configureCell:(NSString * _Nonnull)some_title font_name:(NSString * _Nonnull)font_name;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UITableView;
 @class NSIndexPath;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC11Apple_Fonts23FontTableViewController")
 @interface FontTableViewController : UITableViewController
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull all_faces;
+@property (nonatomic, readonly, copy) NSString * _Nonnull placeholder_text;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;

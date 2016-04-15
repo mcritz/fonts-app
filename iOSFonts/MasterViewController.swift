@@ -17,6 +17,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		self.title = NSLocalizedString("Installed Fonts", comment: "")
 		// Do any additional setup after loading the view, typically from a nib.
 		self.navigationItem.leftBarButtonItem = self.editButtonItem()
 
@@ -61,11 +62,17 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 	// MARK: - Segues
 
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		guard let the_cell = sender as? FontTableCell else { return }
 		if segue.identifier == "showDetail" {
-		    if let indexPath = self.tableView.indexPathForSelectedRow {
+//		    if let indexPath = self.tableView.indexPathForSelectedRow {
+			let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
+			controller.detailItem = the_cell.headlineLabel.text
+
+				/*
 		    let object = self.fetchedResultsController.objectAtIndexPath(indexPath)
 		        let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
 		        controller.detailItem = object
+			*/
 		        controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
 		        controller.navigationItem.leftItemsSupplementBackButton = true
 		    }

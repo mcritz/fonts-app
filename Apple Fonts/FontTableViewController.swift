@@ -10,6 +10,7 @@ import UIKit
 
 class FontTableCell: UITableViewCell {
 	@IBOutlet var headlineLabel :UILabel!
+	@IBOutlet weak var subheadlineLabel: UILabel!
 	
 	func getHeight() -> CGFloat {
 		return self.contentView.frame.height * 0.5
@@ -17,8 +18,9 @@ class FontTableCell: UITableViewCell {
 	
 	func configureCell(some_title :String, font_name :String) {
 		self.headlineLabel.text = some_title
-		
 		headlineLabel.font = UIFont(name: font_name, size: getHeight())
+		
+		self.subheadlineLabel.text = font_name
 	}
 }
 

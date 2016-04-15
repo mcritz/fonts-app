@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0F3FD3E31CB815F8002AD7A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FD3E21CB815F8002AD7A6 /* AppDelegate.swift */; };
 		0F3FD3E61CB815F8002AD7A6 /* iOSFonts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FD3E41CB815F8002AD7A6 /* iOSFonts.xcdatamodeld */; };
-		0F3FD3E81CB815F8002AD7A6 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FD3E71CB815F8002AD7A6 /* MasterViewController.swift */; };
 		0F3FD3EA1CB815F8002AD7A6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FD3E91CB815F8002AD7A6 /* DetailViewController.swift */; };
 		0F3FD3ED1CB815F9002AD7A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3FD3EB1CB815F8002AD7A6 /* Main.storyboard */; };
 		0F3FD3EF1CB815F9002AD7A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F3FD3EE1CB815F9002AD7A6 /* Assets.xcassets */; };
@@ -22,6 +21,16 @@
 		0F3FD4161CB81696002AD7A6 /* CZFontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCF618B1CB6B6FA00845BC5 /* CZFontsManager.swift */; };
 		0F3FD4171CB81697002AD7A6 /* CZFontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCF618B1CB6B6FA00845BC5 /* CZFontsManager.swift */; };
 		0F3FD4191CB81883002AD7A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3FD3EB1CB815F8002AD7A6 /* Main.storyboard */; };
+		0F3FD41B1CBABB14002AD7A6 /* FontDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FD41A1CBABB14002AD7A6 /* FontDetailViewController.swift */; };
+		0F3FD41C1CBABB14002AD7A6 /* FontDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FD41A1CBABB14002AD7A6 /* FontDetailViewController.swift */; };
+		0F3FD41D1CBABB14002AD7A6 /* FontDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FD41A1CBABB14002AD7A6 /* FontDetailViewController.swift */; };
+		0F3FD41E1CBABB14002AD7A6 /* FontDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FD41A1CBABB14002AD7A6 /* FontDetailViewController.swift */; };
+		0F3FD4201CBB5FD6002AD7A6 /* CZPlaceholderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FD41F1CBB5FD6002AD7A6 /* CZPlaceholderText.swift */; };
+		0F3FD4211CBB5FD6002AD7A6 /* CZPlaceholderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FD41F1CBB5FD6002AD7A6 /* CZPlaceholderText.swift */; };
+		0F3FD4221CBB5FD6002AD7A6 /* CZPlaceholderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FD41F1CBB5FD6002AD7A6 /* CZPlaceholderText.swift */; };
+		0F3FD4231CBB5FD6002AD7A6 /* CZPlaceholderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FD41F1CBB5FD6002AD7A6 /* CZPlaceholderText.swift */; };
+		0F3FD4241CBB656A002AD7A6 /* CZPlaceholderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FD41F1CBB5FD6002AD7A6 /* CZPlaceholderText.swift */; };
+		0F3FD4251CBB656B002AD7A6 /* CZPlaceholderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FD41F1CBB5FD6002AD7A6 /* CZPlaceholderText.swift */; };
 		0F656C4E1CB72F2F00CB2C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCAFDB81CB6A85E00ED7CBD /* Main.storyboard */; };
 		0F656C501CB72FBD00CB2C63 /* FontTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F656C4F1CB72FBD00CB2C63 /* FontTableViewController.swift */; };
 		0F656C511CB72FBD00CB2C63 /* FontTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F656C4F1CB72FBD00CB2C63 /* FontTableViewController.swift */; };
@@ -71,7 +80,6 @@
 		0F3FD3E01CB815F8002AD7A6 /* iOSFonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFonts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3FD3E21CB815F8002AD7A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F3FD3E51CB815F8002AD7A6 /* iOSFonts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSFonts.xcdatamodel; sourceTree = "<group>"; };
-		0F3FD3E71CB815F8002AD7A6 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		0F3FD3E91CB815F8002AD7A6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0F3FD3EC1CB815F8002AD7A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F3FD3EE1CB815F9002AD7A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +91,8 @@
 		0F3FD4031CB815F9002AD7A6 /* iOSFontsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSFontsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3FD4071CB815F9002AD7A6 /* iOSFontsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSFontsUITests.swift; sourceTree = "<group>"; };
 		0F3FD4091CB815F9002AD7A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F3FD41A1CBABB14002AD7A6 /* FontDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontDetailViewController.swift; sourceTree = "<group>"; };
+		0F3FD41F1CBB5FD6002AD7A6 /* CZPlaceholderText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZPlaceholderText.swift; sourceTree = "<group>"; };
 		0F656C4F1CB72FBD00CB2C63 /* FontTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontTableViewController.swift; sourceTree = "<group>"; };
 		0FCAFDAE1CB6A85E00ED7CBD /* Apple Fonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Fonts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCAFDB11CB6A85E00ED7CBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				0F3FD3E21CB815F8002AD7A6 /* AppDelegate.swift */,
-				0F3FD3E71CB815F8002AD7A6 /* MasterViewController.swift */,
+				0F3FD41A1CBABB14002AD7A6 /* FontDetailViewController.swift */,
 				0F3FD3E91CB815F8002AD7A6 /* DetailViewController.swift */,
 				0F3FD3EB1CB815F8002AD7A6 /* Main.storyboard */,
 				0F3FD3EE1CB815F9002AD7A6 /* Assets.xcassets */,
@@ -209,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				0FCAFDB11CB6A85E00ED7CBD /* AppDelegate.swift */,
+				0F3FD41F1CBB5FD6002AD7A6 /* CZPlaceholderText.swift */,
 				0FCF618B1CB6B6FA00845BC5 /* CZFontsManager.swift */,
 				0FCAFDB31CB6A85E00ED7CBD /* ViewController.swift */,
 				0F656C4F1CB72FBD00CB2C63 /* FontTableViewController.swift */,
@@ -463,10 +474,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F3FD3E61CB815F8002AD7A6 /* iOSFonts.xcdatamodeld in Sources */,
+				0F3FD4221CBB5FD6002AD7A6 /* CZPlaceholderText.swift in Sources */,
 				0F3FD3E31CB815F8002AD7A6 /* AppDelegate.swift in Sources */,
-				0F3FD3E81CB815F8002AD7A6 /* MasterViewController.swift in Sources */,
 				0F3FD4131CB81685002AD7A6 /* FontTableViewController.swift in Sources */,
 				0F3FD3EA1CB815F8002AD7A6 /* DetailViewController.swift in Sources */,
+				0F3FD41D1CBABB14002AD7A6 /* FontDetailViewController.swift in Sources */,
 				0F3FD4151CB81695002AD7A6 /* CZFontsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +489,7 @@
 			files = (
 				0F3FD3FD1CB815F9002AD7A6 /* iOSFontsTests.swift in Sources */,
 				0F3FD4161CB81696002AD7A6 /* CZFontsManager.swift in Sources */,
+				0F3FD4231CBB5FD6002AD7A6 /* CZPlaceholderText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,7 +499,9 @@
 			files = (
 				0F3FD4141CB81686002AD7A6 /* FontTableViewController.swift in Sources */,
 				0F3FD4081CB815F9002AD7A6 /* iOSFontsUITests.swift in Sources */,
+				0F3FD41E1CBABB14002AD7A6 /* FontDetailViewController.swift in Sources */,
 				0F3FD4171CB81697002AD7A6 /* CZFontsManager.swift in Sources */,
+				0F3FD4241CBB656A002AD7A6 /* CZPlaceholderText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,9 +510,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FCAFDB41CB6A85E00ED7CBD /* ViewController.swift in Sources */,
+				0F3FD4201CBB5FD6002AD7A6 /* CZPlaceholderText.swift in Sources */,
 				0FCF618C1CB6B6FA00845BC5 /* CZFontsManager.swift in Sources */,
 				0FCAFDB71CB6A85E00ED7CBD /* Apple_Fonts.xcdatamodeld in Sources */,
 				0F656C501CB72FBD00CB2C63 /* FontTableViewController.swift in Sources */,
+				0F3FD41B1CBABB14002AD7A6 /* FontDetailViewController.swift in Sources */,
 				0FCAFDB21CB6A85E00ED7CBD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +525,7 @@
 			files = (
 				0FCAFDC71CB6A85E00ED7CBD /* Apple_FontsTests.swift in Sources */,
 				0FCF618D1CB6B6FA00845BC5 /* CZFontsManager.swift in Sources */,
+				0F3FD4211CBB5FD6002AD7A6 /* CZPlaceholderText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +534,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F656C511CB72FBD00CB2C63 /* FontTableViewController.swift in Sources */,
+				0F3FD41C1CBABB14002AD7A6 /* FontDetailViewController.swift in Sources */,
 				0FCAFDD21CB6A85E00ED7CBD /* Apple_FontsUITests.swift in Sources */,
+				0F3FD4251CBB656B002AD7A6 /* CZPlaceholderText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

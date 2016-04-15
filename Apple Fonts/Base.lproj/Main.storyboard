@@ -8,34 +8,41 @@
         <scene sceneID="9rw-fg-Exh">
             <objects>
                 <tableViewController id="EkO-Ij-dxO" customClass="FontTableViewController" customModule="Apple_Fonts" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="L5h-53-9pg">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="145" sectionHeaderHeight="40" sectionFooterHeight="40" id="L5h-53-9pg">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="font_face_cell" id="ELB-qE-jOo" customClass="FontTableCell" customModule="Apple_Fonts" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="54" width="1920" height="66"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="font_face_cell" rowHeight="145" id="ELB-qE-jOo" customClass="FontTableCell" customModule="Apple_Fonts" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="54" width="1920" height="145"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ELB-qE-jOo" id="10h-fu-F6f">
-                                    <rect key="frame" x="0.0" y="0.0" width="1904" height="66"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1904" height="145"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0WN-Xd-qKL" userLabel="Headline">
-                                            <rect key="frame" x="21" y="8" width="1859" height="58"/>
+                                            <rect key="frame" x="21" y="8" width="1859" height="83"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Label">
                                                     <attributes>
                                                         <color key="NSColor" red="0.12861885130405426" green="0.1466267853975296" blue="0.16886942088603973" alpha="1" colorSpace="calibratedRGB"/>
                                                         <font key="NSFont" size="41" name="HelveticaNeue"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHV-tX-SVe" userLabel="Subhead">
+                                            <rect key="frame" x="21" y="90" width="1859" height="47"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <color key="textColor" red="0.12861885130405426" green="0.1466267853975296" blue="0.16886942088603973" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier="font_cell"/>
                                 <connections>
+                                    <outlet property="SubheadlineLabel" destination="aHV-tX-SVe" id="oxK-fi-4Ei"/>
                                     <outlet property="headlineLabel" destination="0WN-Xd-qKL" id="1aF-3Y-2dv"/>
                                 </connections>
                             </tableViewCell>
